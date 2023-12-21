@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name": "socketing",
+    "builds": [
+    {
+     "src": "example.go",
+     "use": "@vercel/node"
+    }
+   ], 
+    "routes": [
+    {
+     "src": "/(.*)", 
+     "dest": "/example.go"  
+    }
+]
+    }
